@@ -7,6 +7,14 @@
     "jasmine": "^3.2.0",
     "protractor": "^5.4.1"
   },
+  "dev-Dependencies": {
+    "astrolabe": "^0.3.6",
+    "jasmine-reporters": "^2.3.2",
+    "protractor-html-screenshot-reporter": "^0.0.21",
+    "protractor-jasmine2-html-reporter": "^0.0.7",
+    "protractor-jasmine2-screenshot-reporter": "^0.5.0",
+    "winston": "^3.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -5,4 +5,3 @@ exports.config = {
     specs: ['registertest.js'],
 
 };
- 
