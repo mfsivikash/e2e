@@ -1,14 +1,14 @@
 var Register = function () {
   var EC = protractor.ExpectedConditions;
-  var grubHubPopUp = element(by.xpath('//div[contains(text(),"Not now")]'));
-  var signIn = element(by.xpath('.//span[contains(text(),"Sign in")]'));
-  var createAccount = element(by.xpath('//a[@class="ghs-goToCreateAccount"]'));
-  var firstname = element(by.xpath('//input[@placeholder="First name"]'));
-  var lastname = element(by.xpath('//input[@placeholder="Last name"]'));
-  var emailid = element(by.xpath('//input[@placeholder="Enter your email"]'));
-  var password = element(by.xpath('//input[@placeholder="Password (8 character minimum)"]'));
-  var createAccountSubmit = element(by.xpath('//div[@class="newUserWizard-content wizardStep"]//div[@class="s-col-md-12"]//button'));
-  var profileFirstName = element(by.xpath('//span[@class="mainNavProfile-user-initial h4 u-margin-cancel"]'));
+  var grubHubPopUp = element(by.css('div.c-modal-body-section div:nth-of-type(2)'));
+  var signIn = element(by.css('div.s-dropdown.dropdown>button'));
+  var createAccount = element(by.css('a.ghs-goToCreateAccount'));
+  var firstname = element(by.css('input[name=firstName]'));
+  var lastname = element(by.css('input[name=lastName]'));
+  var emailid = element(by.css('div.s-input-group>input[name=email]'));
+  var password = element(by.css('input[name=password]'));
+  var createAccountSubmit = element(by.css('div.s-col-md-12>button'));
+  var profileFirstName = element(by.css('div.s-dropdown.dropdown>button span:nth-of-type(3)'));
   this.signin = function () {
     browser.wait(EC.elementToBeClickable((signIn), 5000));
     signIn.click();
@@ -17,7 +17,7 @@ var Register = function () {
 
 
     browser.wait(EC.visibilityOf(profileFirstName), 10000);
-    expect(profileFirstName.getText()).toEqual('v');
+    expect(profileFirstName.getText()).toEqual('vikash!');
   };
   this.closeGrubHubPopUP = function(){
     
