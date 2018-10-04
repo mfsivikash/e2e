@@ -2,13 +2,15 @@ var Register = function () {
 
   //For Expected Conditions
   var EC = protractor.ExpectedConditions;
+
   //Web-Elements at HomePage
   var grubHubPopUp = element(by.css('div.c-modal-body-section div:nth-of-type(2)'));
   var signIn = element(by.css('div.s-dropdown.dropdown>button'));
   var profileFirstName = element(by.css('div.s-dropdown.dropdown>button span:nth-of-type(3)'));
-  var profileMenu = element(by.css('span.icon-16.icon-caret-down'))
+  var profileMenu = element(by.css('cb-icon.u-hidden-sm--down'))
   var logoutLink = element(by.css('a.ghs-signOut.u-text-interactive'))
   var grubHubFrame = element(by.css('div.c-modal[data-chiri-id="2DLRWAuQ8cU0A8IwkCYcsy"]'));
+
   //Web-Element at Sign up Window
   var createAccount = element(by.css('a.ghs-goToCreateAccount'));
   var firstname = element(by.css('input[name=firstName]'));
@@ -76,6 +78,7 @@ var Register = function () {
     lastname.sendKeys(lname);
     emailid.sendKeys(email);
     password.sendKeys(pass);
+
     //Timeout condition of 5 sec to wait for Create Account button to be clickable
     browser.wait(EC.elementToBeClickable((createAccountSubmit)), 5000);
     createAccountSubmit.click();

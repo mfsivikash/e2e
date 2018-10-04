@@ -2,17 +2,17 @@
 Description: Page for Testing Registration 
 Author: Vikash
 */
+
 "use strict;"
-//Importing Register Repo page
-var register = require('../e2etests/registerrepo.js');
-//Importing Test Constant
-require('../e2etests/TestConstant.js');
+var register = require('./PageObject/SignUpPage.js');
+
 //Creating random email
 var email = Math.random().toString(36).substring(7) + "@gmail.com";
 
 //Suite for Registration at Eat 24
 describe('Register at Eat 24', function () {
     beforeEach(function () {
+
         //Maximizing the window
         browser.driver.manage().window().maximize();
 
