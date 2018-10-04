@@ -1,3 +1,4 @@
+var utils = require('../Protractor-Utils.js');
 var Register = function () {
 
   //For Expected Conditions
@@ -10,7 +11,6 @@ var Register = function () {
   var profileMenu = element(by.css('cb-icon.u-hidden-sm--down'))
   var logoutLink = element(by.css('a.ghs-signOut.u-text-interactive'))
   var grubHubFrame = element(by.css('div.c-modal[data-chiri-id="2DLRWAuQ8cU0A8IwkCYcsy"]'));
-
   //Web-Element at Sign up Window
   var createAccount = element(by.css('a.ghs-goToCreateAccount'));
   var firstname = element(by.css('input[name=firstName]'));
@@ -35,7 +35,7 @@ var Register = function () {
   @Parm: 
   */
   this.signout = function () {
-    browser.wait(EC.elementToBeClickable((profileMenu), 5000));
+    browser.wait(EC.elementToBeClickable((profileMenu), 10000));
     profileMenu.click();
     logoutLink.click();
   };
@@ -46,7 +46,6 @@ var Register = function () {
   this.verifyProfileFirstName = function () {
     browser.wait(EC.visibilityOf(profileFirstName), 10000);
     expect(profileFirstName.getText()).toEqual('vikash!');
-
   };
 
   /*Description: Method to assert first name and return false if matched (for duplicate account)
@@ -61,17 +60,14 @@ var Register = function () {
   @Parm: 
   */
   this.closeGrubHubPopUP = function () {
-    grubHubFrame.isPresent().then(function (isVisible) {
-      if (isVisible) {
-        grubHubPopUp.click();
-      }
-    });
+    utils.checkElementPresentAndClick(grubHubFrame, grubHubPopUp);
   };
 
   /*Description: Method to create account
   @Param: First name,Last name, Email and Password
   */
   this.createyouraccount = function (fname, lname, email, pass) {
+    browser.wait(EC.visibilityOf(signIn), 10000);
     signIn.click();
     createAccount.click();
     firstname.sendKeys(fname);

@@ -4,10 +4,7 @@ Author: Vikash
 */
 
 "use strict;"
-var register = require('./PageObject/SignUpPage.js');
-
-//Creating random email
-var email = Math.random().toString(36).substring(7) + "@gmail.com";
+var register = require('../PageObject/SignUpPage.js');
 
 //Suite for Registration at Eat 24
 describe('Register at Eat 24', function () {
