@@ -18,12 +18,15 @@ var Restaurant = function () {
   var addToBag = element(by.css('span.s-btn-copy'));
   var quantityDispalyedInCart = element(by.css('div.s-col-xs-1.orderItem-quantity.u-padding-cancel'));
   var checkOut = element(by.css('button[id="ghs-cart-checkout-button"]'));
-  var nameCheckOut = element(by.css('[class="contact-info-name"]'));
+  var nameCheckOut = element(by.css('p.contact-info-name'));
+  var enterPhone = element(by.css('[name="accountPhone"]'));
+  var paymentContinue = element(by.css('span.s-btn-copy'));
 
   /*Description: Method to find food in particular location
   @Parm: location
   */
   this.findfoodatlocation = function (location) {
+    browser.sleep(2000);
     locationBox.sendKeys(location);
     findFood.click();
     browser.wait(EC.visibilityOf(food), 10000);
@@ -33,7 +36,7 @@ var Restaurant = function () {
   /*Description: Method to order from 4 star restaurant
     @Parm: location
     */
-  this.orderfoodfromfourstar = function (location) {
+  this.orderfoodfromfourstar = function (phoneno) {
     fourStarFilter.click();
     firstRestaurant.click();
     browser.wait(EC.visibilityOf(firstFoodItem), 10000);
@@ -45,7 +48,12 @@ var Restaurant = function () {
     browser.wait(EC.visibilityOf(quantityDispalyedInCart), 10000);
     expect(quantityDispalyedInCart.getText()).toBe('2');
     checkOut.click();
-    expect(quantityDispalyedInCart.getText()).toBe('2');
+    browser.sleep(10000);
+    browser.wait(EC.visibilityOf(enterPhone), 10000);
+    enterPhone.sendKeys(phoneno);
+    paymentContinue.click();
+    browser.wait(EC.visibilityOf(nameCheckOut), 10000);
+    expect(nameCheckOut.getText()).toBe('VIKASH KHANDELWAL');
   };
 };
 module.exports = new Restaurant();

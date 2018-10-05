@@ -5,7 +5,7 @@ Author: Vikash
 
 "use strict;"
 var register = require('../PageObject/SignUpPage.js');
-var restuarant = require('../PageObject/Restaurants.js');
+var restuarant = require('../PageObject/OrderFood.js');
 require('../TestConstant.js');
 
 //Suite for Restaurant at Eat 24
@@ -33,8 +33,7 @@ describe('Suite for Restaurant page', function () {
         var email = Math.random().toString(36).substring(7) + "@gmail.com";
         register.createyouraccount('vikash', 'khandelwal', email, 'abcd1234');
         restuarant.findfoodatlocation('80 S Los Angeles St, Los Angeles, CA, 90012');
-        restuarant.orderfoodfromfourstar();
-        register.signout();
+        restuarant.orderfoodfromfourstar('(324) 234-2342');
     });
 
 });
