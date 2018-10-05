@@ -8,9 +8,10 @@ var Register = function () {
   var grubHubPopUp = element(by.css('div.c-modal-body-section div:nth-of-type(2)'));
   var signIn = element(by.css('div.s-dropdown.dropdown>button'));
   var profileFirstName = element(by.css('div.s-dropdown.dropdown>button span:nth-of-type(3)'));
-  var profileMenu = element(by.css('cb-icon.u-hidden-sm--down'))
-  var logoutLink = element(by.css('a.ghs-signOut.u-text-interactive'))
+  var profileMenu = element(by.css('cb-icon.u-hidden-sm--down'));
+  var logoutLink = element(by.css('a.ghs-signOut.u-text-interactive'));
   var grubHubFrame = element(by.css('div.c-modal[data-chiri-id="2DLRWAuQ8cU0A8IwkCYcsy"]'));
+
   //Web-Element at Sign up Window
   var createAccount = element(by.css('a.ghs-goToCreateAccount'));
   var firstname = element(by.css('input[name=firstName]'));
@@ -35,6 +36,7 @@ var Register = function () {
   @Parm: 
   */
   this.signout = function () {
+    browser.sleep(2000);
     browser.wait(EC.elementToBeClickable((profileMenu), 10000));
     profileMenu.click();
     logoutLink.click();
