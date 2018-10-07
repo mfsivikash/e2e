@@ -7,6 +7,7 @@ Author: Vikash
 var register = require('../PageObject/SignUpPage.js');
 var saved = require('../PageObject/SavedRestaurantPage.js');
 var order = require('../PageObject/OrderFoodPage.js');
+require('../TestConstant.js');
 
 //Suite for Saved Page at Eat24
 describe('Saved Restaurant', function () {
