@@ -5,7 +5,13 @@ exports.config = {
     seleniumAddress: 'http://localhost:4444/wd/hub',
 
     //directConnect:true,
+
     specs: ['Test/OrderFoodTest.js', 'Test/SavedRestaurantTest.js', 'Test/SignUpTest.js'],
+    suites: {
+        orderfood: 'Test/OrderFoodTest.js',
+        register: 'Test/SignUpTest.js',
+        savedrestaurant: 'Test/SavedRestaurantTest.js'
+    },
     capabilities: {
         browserName: 'chrome',
 

@@ -48,6 +48,7 @@ var Restaurant = function () {
   */
   this.findfoodatlocation = function (location) {
     browser.sleep(2000);
+    browser.wait(EC.visibilityOf(locationBox), 10000);
     locationBox.sendKeys(location);
     findFood.click();
     browser.wait(EC.visibilityOf(food), 10000);
