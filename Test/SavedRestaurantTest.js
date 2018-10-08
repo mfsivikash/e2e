@@ -8,6 +8,7 @@ var register = require('../PageObject/SignUpPage.js');
 var saved = require('../PageObject/SavedRestaurantPage.js');
 var order = require('../PageObject/OrderFoodPage.js');
 var utils = require('../Protractor-Utils.js');
+var data = require('../data.json');
 require('../TestConstant.js');
 
 //Suite for Saved Page at Eat24
@@ -18,7 +19,7 @@ describe('Saved Restaurant', function () {
         browser.driver.manage().window().maximize();
 
         //Opening the website
-        browser.get('https://www.eat24.com/');
+        browser.get(data.siteURL);
 
         //Closes GrubHub Pop Up if it's displayed
         register.closeGrubHubPopUP();
@@ -26,8 +27,8 @@ describe('Saved Restaurant', function () {
 
     it('Save a restaurant in restaurant page and verify in saved pages', function () {
         var email = Math.random().toString(36).substring(7) + "@gmail.com";
-        register.createyouraccount('vikash', 'khandelwal', email, 'abcd1234');
-        order.findfoodatlocation('80 S Los Angeles St, Los Angeles, CA, 90012');
+        register.createyouraccount(data.user.fname, data.user.lname, email, data.user.password);
+        order.findfoodatlocation(data.location);
 
         //Name of the restaurant from Restaurant Page 
         var namer = order.savefirstrestaurant();
@@ -40,8 +41,8 @@ describe('Saved Restaurant', function () {
 
     it('Save popular restaurant in home page and verify in saved pages', function () {
         var email = Math.random().toString(36).substring(7) + "@gmail.com";
-        register.createyouraccount('vikash', 'khandelwal', email, 'abcd1234');
-        order.findfoodatlocation('80 S Los Angeles St, Los Angeles, CA, 90012');
+        register.createyouraccount(data.user.fname, data.user.lname, email, data.user.password);
+        order.findfoodatlocation(data.location);
         browser.navigate().back();
 
         //Name of the popular restaurant from Home Page 
@@ -55,8 +56,8 @@ describe('Saved Restaurant', function () {
 
     it('Save closest restaurant in home page and verify in saved pages', function () {
         var email = Math.random().toString(36).substring(7) + "@gmail.com";
-        register.createyouraccount('vikash', 'khandelwal', email, 'abcd1234');
-        order.findfoodatlocation('80 S Los Angeles St, Los Angeles, CA, 90012');
+        register.createyouraccount(data.user.fname, data.user.lname, email, data.user.password);
+        order.findfoodatlocation(data.location);
         browser.navigate().back();
 
         //Name of the closest restaurant from Home Page 

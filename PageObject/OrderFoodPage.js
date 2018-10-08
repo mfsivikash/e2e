@@ -22,12 +22,13 @@ var Restaurant = function () {
   var sortOptions = element(by.css('select#ghs-select-sort'));
   let list = element.all(by.css('option.ng-star-inserted'));
   var openNow = element(by.css('label[for$="Open Now"]'));
-
+  
   //Web-Element in Order Page
-  var firstFoodItem = element(by.xpath('//div[@id="menuItem-19395675"]//div[@class="body"]'));
+  var firstFoodItem = element(by.css('div.menuItem-container--featured>div:nth-of-type(1)'));
   var addQuantity = element(by.css('button.s-btn.s-btn-secondary.s-iconBtn.s-iconBtn--quantity.u-flex-center-center:nth-child(3)'))
   var largeOption = element(by.xpath('//div[@class="menuItemModal-options"]//div[1]//ghs-item-options[1]//div[1]//div[1]//div[2]//div[2]//div[1]//ghs-item-options-radios[1]//div[1]//label[1]//div[1]'))
   var RanchOption = element(by.xpath('//div[@class="menuItemModal-options"]//div[2]//ghs-item-options[1]//div[1]//div[1]//div[2]//div[1]//div[1]//ghs-item-options-radios[1]//div[1]//label[1]'));
+  var thirdOption = element(by.xpath('//div[@class="menuItemModal-options"]//div[3]//ghs-item-options[1]//div[1]//div[1]//div[2]//div[1]//div[1]//ghs-item-options-radios[1]//div[1]//label[1]'));
   var addToBag = element(by.css('span.s-btn-copy'));
   var quantityDispalyedInCart = element(by.css('div.s-col-xs-1.orderItem-quantity.u-padding-cancel'));
   var checkOut = element(by.css('button[id="ghs-cart-checkout-button"]'));
@@ -94,17 +95,21 @@ var Restaurant = function () {
   this.orderfood = function (phoneno) {
     browser.wait(EC.visibilityOf(openNow), 10000);
     openNow.click();
-    purgatory.click();
+    firstRestaurant.click();
     utils.checkElementPresentAndClick(preOrder, preOrder);
     utils.checkElementPresentAndClick(deliverToday, deliverToday);
     browser.wait(EC.visibilityOf(firstFoodItem), 10000);
     firstFoodItem.click();
     addQuantity.click();
+    addQuantity.click();
+    addQuantity.click();
     largeOption.click();
-    RanchOption.click();
+    utils.checkElementPresentAndClick(largeOption,largeOption);
+    utils.checkElementPresentAndClick(RanchOption, RanchOption);
+    utils.checkElementPresentAndClick(thirdOption, thirdOption);
     addToBag.click();
     browser.wait(EC.visibilityOf(quantityDispalyedInCart), 10000);
-    expect(quantityDispalyedInCart.getText()).toBe('2');
+    expect(quantityDispalyedInCart.getText()).toBe('4');
     checkOut.click();
     browser.wait(EC.visibilityOf(enterPhone), 10000);
     enterPhone.sendKeys(phoneno);

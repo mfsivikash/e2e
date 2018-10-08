@@ -1,4 +1,5 @@
 var utils = require('../Protractor-Utils.js');
+
 var Saved = function () {
 
     //For Expected Conditions
@@ -42,12 +43,12 @@ var Saved = function () {
     @Parm: 
     @Return: Restaurant Name
     */
-   this.savedclosestrestauranthome = function () {
-    browser.executeScript('arguments[0].scrollIntoView()', scrollToPopularRestaurant.getWebElement());
-    utils.clickallelements(allsavedIconClosest);
-    var names = utils.storeallelementtextintoarray(allClosestRestaurant);
-    return names;
-};
+    this.savedclosestrestauranthome = function () {
+        browser.executeScript('arguments[0].scrollIntoView()', scrollToPopularRestaurant.getWebElement());
+        utils.clickallelements(allsavedIconClosest);
+        var names = utils.storeallelementtextintoarray(allClosestRestaurant);
+        return names;
+    };
 
     /*Description: Method to get all name from saved pages 
         @Parm: 

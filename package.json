@@ -5,6 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "jasmine": "^3.2.0",
+    "log4js": "^3.0.5",
     "protractor": "^5.4.1",
     "protractor-beautiful-reporter": "^1.2.5",
     "protractor-flake": "^3.3.0",
