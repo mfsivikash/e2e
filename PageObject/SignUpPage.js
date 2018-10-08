@@ -6,7 +6,7 @@ var Register = function () {
 
   //Web-Elements at HomePage
   var grubHubPopUp = element(by.css('div.c-modal-body-section div:nth-of-type(2)'));
-  var signIn = element(by.css('div.s-dropdown.dropdown>button'));
+  var signIn = element(by.xpath('//span[contains(text(),"Sign in")]'));
   var profileFirstName = element(by.css('div.s-dropdown.dropdown>button span:nth-of-type(3)'));
   var profileMenu = element(by.css('cb-icon.u-hidden-sm--down'));
   var logoutLink = element(by.css('a.ghs-signOut.u-text-interactive'));

@@ -18,16 +18,16 @@ var Restaurant = function () {
   var threeStarFilter = element(by.css('button[title="3 And Above"]'));
   var fourStarFilter = element(by.css('button[title="4 And Above"]'));
   var fiveStarFilter = element(by.css('button[title="5 Only"]'));
-  var laCafe = element(by.css('a#ghs-search-results-restaurantId-656911'));
+  var purgatory = element(by.css('#ghs-search-results-restaurantId-141538'));
   var sortOptions = element(by.css('select#ghs-select-sort'));
   let list = element.all(by.css('option.ng-star-inserted'));
   var openNow = element(by.css('label[for$="Open Now"]'));
 
   //Web-Element in Order Page
-  var firstFoodItem = element(by.xpath('//div[@id="menuItem-28395593"]//div[@class="menuItem-inner u-pressable u-inset-2 u-rounded"]'));
+  var firstFoodItem = element(by.xpath('//div[@id="menuItem-19395675"]//div[@class="body"]'));
   var addQuantity = element(by.css('button.s-btn.s-btn-secondary.s-iconBtn.s-iconBtn--quantity.u-flex-center-center:nth-child(3)'))
-  var secondOptionEggPrep = element(by.xpath('//div[@class="menuItemModal-options"]//div[1]//ghs-item-options[1]//div[1]//div[1]//div[2]//div[2]//div[1]//ghs-item-options-radios[1]//div[1]//label[1]//div[1]'))
-  var thirdOptionToast = element(by.xpath('//div[@class="menuItemModal-options"]//div[2]//ghs-item-options[1]//div[1]//div[1]//div[2]//div[1]//div[1]//ghs-item-options-radios[1]//div[1]//label[1]'));
+  var largeOption = element(by.xpath('//div[@class="menuItemModal-options"]//div[1]//ghs-item-options[1]//div[1]//div[1]//div[2]//div[2]//div[1]//ghs-item-options-radios[1]//div[1]//label[1]//div[1]'))
+  var RanchOption = element(by.xpath('//div[@class="menuItemModal-options"]//div[2]//ghs-item-options[1]//div[1]//div[1]//div[2]//div[1]//div[1]//ghs-item-options-radios[1]//div[1]//label[1]'));
   var addToBag = element(by.css('span.s-btn-copy'));
   var quantityDispalyedInCart = element(by.css('div.s-col-xs-1.orderItem-quantity.u-padding-cancel'));
   var checkOut = element(by.css('button[id="ghs-cart-checkout-button"]'));
@@ -93,14 +93,14 @@ var Restaurant = function () {
   this.orderfood = function (phoneno) {
     browser.wait(EC.visibilityOf(openNow), 10000);
     openNow.click();
-    laCafe.click();
+    purgatory.click();
     utils.checkElementPresentAndClick(preOrder, preOrder);
     utils.checkElementPresentAndClick(deliverToday, deliverToday);
     browser.wait(EC.visibilityOf(firstFoodItem), 10000);
     firstFoodItem.click();
     addQuantity.click();
-    secondOptionEggPrep.click();
-    thirdOptionToast.click();
+    largeOption.click();
+    RanchOption.click();
     addToBag.click();
     browser.wait(EC.visibilityOf(quantityDispalyedInCart), 10000);
     expect(quantityDispalyedInCart.getText()).toBe('2');
