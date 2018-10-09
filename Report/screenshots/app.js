@@ -998,6 +998,685 @@ app.controller('ScreenshotReportController', function ($scope) {
         "screenShotFile": "00d000c8-002c-0073-00cb-0051006f00c2.png",
         "timestamp": 1539004533614,
         "duration": 8814
+    },
+    {
+        "description": "Find restuarant in particular region and check if it is displayed|Suite for Restaurant page",
+        "passed": false,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "e5253285e08563df475362872a7bb2eb",
+        "instanceId": 6784,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": [
+            "Failed: No element found using locator: By(css selector, a.ghs-goToCreateAccount)"
+        ],
+        "trace": [
+            "NoSuchElementError: No element found using locator: By(css selector, a.ghs-goToCreateAccount)\n    at elementArrayFinder.getWebElements.then (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27)\n    at ManagedPromise.invokeCallback_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as click] (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as click] (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at Register.createyouraccount (D:\\e2etests\\PageObject\\SignUpPage.js:74:19)\n    at UserContext.<anonymous> (D:\\e2etests\\Test\\OrderFoodTest.js:28:18)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:112:25\n    at new ManagedPromise (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1077:7)\n    at ControlFlow.promise (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2505:12)\n    at schedulerExecute (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:95:18)\n    at TaskQueue.execute_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\nFrom: Task: Run it(\"Find restuarant in particular region and check if it is displayed\") in control flow\n    at UserContext.<anonymous> (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:94:19)\n    at attempt (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4297:26)\n    at QueueRunner.run (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4217:20)\n    at runNext (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4257:20)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4264:13\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4172:9\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:64:48\n    at ControlFlow.emit (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\events.js:62:21)\n    at ControlFlow.shutdown_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2674:10)\n    at shutdownTask_.MicroTask (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2599:53)\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (D:\\e2etests\\Test\\OrderFoodTest.js:26:5)\n    at addSpecsToSuite (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (D:\\e2etests\\Test\\OrderFoodTest.js:13:1)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)"
+        ],
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%226qvm7udnzk4c7u6shg7aorybr1539063083570%22%2C%22sessionId%22%3A%22chxffgdkjlmgz73akl9v694fo1539063083569%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A31%3A23.569Z%22%2C%22userId%22%3A%22%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A6%2C%22dateTime%22%3A%222018-10-09T05%3A31%3A24.173Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%228f547a8a-cb84-11e8-b145-436423b0ddf8%22%2C%22v2SessionId%22%3A%228f553ddd-cb84-11e8-8a35-cb159f0757db%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063085357,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://www.eat24.com/ 152:16575 Uncaught SyntaxError: Unexpected token h in JSON at position 0",
+                "timestamp": 1539063091747,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "00620019-00c8-0020-0025-006b002f00b4.png",
+        "timestamp": 1539063077333,
+        "duration": 15055
+    },
+    {
+        "description": "Find restuarant in particular region and order from 4 star|Suite for Restaurant page",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "e5253285e08563df475362872a7bb2eb",
+        "instanceId": 6784,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://www.eat24.com/ - [DOM] Found 2 elements with non-unique id #navi-form: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1539063093698,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://assets.eat24.com/js/main-982a6e873292be6cb66f.js 0:339715 \"No chunk found for: RestaurantModule\"",
+                "timestamp": 1539063109267,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "000300dc-0075-0070-0059-007c00e700d4.png",
+        "timestamp": 1539063093649,
+        "duration": 58606
+    },
+    {
+        "description": "Sorting restaurant according to distance and verifying|Suite for Restaurant page",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "e5253285e08563df475362872a7bb2eb",
+        "instanceId": 6784,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%226qvm7udnzk4c7u6shg7aorybr1539063083570%22%2C%22sessionId%22%3A%22chxffgdkjlmgz73akl9v694fo1539063083569%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A31%3A23.569Z%22%2C%22userId%22%3A%220%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A5%2C%22dateTime%22%3A%222018-10-09T05%3A32%3A37.917Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%228f547a8a-cb84-11e8-b145-436423b0ddf8%22%2C%22v2SessionId%22%3A%228f553ddd-cb84-11e8-8a35-cb159f0757db%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063158254,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://assets.eat24.com/js/main-982a6e873292be6cb66f.js 0:339715 \"No chunk found for: RestaurantModule\"",
+                "timestamp": 1539063167825,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "00a3007e-0048-0063-00b0-00b70044007c.png",
+        "timestamp": 1539063154270,
+        "duration": 20423
+    },
+    {
+        "description": "Save a restaurant in restaurant page and verify in saved pages|Saved Restaurant",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "e8405ef7b68b6f4922713634b2660053",
+        "instanceId": 7932,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%2281y6hkhqrbk9y7iwesbgppayw1539063184775%22%2C%22sessionId%22%3A%2242itfakd0odgyzs4nphuypspi1539063184774%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A33%3A04.774Z%22%2C%22userId%22%3A%22%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A7%2C%22dateTime%22%3A%222018-10-09T05%3A33%3A05.282Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%22cba749ec-cb84-11e8-8993-6be36895944f%22%2C%22v2SessionId%22%3A%22cba7bf17-cb84-11e8-a1a5-7dcf709e4827%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063186574,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://www.eat24.com/ 152:16575 Uncaught SyntaxError: Unexpected token h in JSON at position 0",
+                "timestamp": 1539063189837,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://www.eat24.com/ - [DOM] Found 2 elements with non-unique id #navi-form: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1539063191292,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://assets.eat24.com/js/main-982a6e873292be6cb66f.js 0:339715 \"No chunk found for: RestaurantModule\"",
+                "timestamp": 1539063201768,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "006a00cb-005c-00a9-0071-00b300b80025.png",
+        "timestamp": 1539063179078,
+        "duration": 38977
+    },
+    {
+        "description": "Save popular restaurant in home page and verify in saved pages|Saved Restaurant",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "e8405ef7b68b6f4922713634b2660053",
+        "instanceId": 7932,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%2281y6hkhqrbk9y7iwesbgppayw1539063184775%22%2C%22sessionId%22%3A%2242itfakd0odgyzs4nphuypspi1539063184774%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A33%3A04.774Z%22%2C%22userId%22%3A%220%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A2%2C%22dateTime%22%3A%222018-10-09T05%3A33%3A42.764Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%22cba749ec-cb84-11e8-8993-6be36895944f%22%2C%22v2SessionId%22%3A%22cba7bf17-cb84-11e8-a1a5-7dcf709e4827%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063223126,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://assets.eat24.com/js/main-982a6e873292be6cb66f.js 0:339715 \"No chunk found for: RestaurantModule\"",
+                "timestamp": 1539063232857,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "001400b1-0045-004e-00b7-009600ef0011.png",
+        "timestamp": 1539063219608,
+        "duration": 30358
+    },
+    {
+        "description": "Save closest restaurant in home page and verify in saved pages|Saved Restaurant",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "e8405ef7b68b6f4922713634b2660053",
+        "instanceId": 7932,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%2281y6hkhqrbk9y7iwesbgppayw1539063184775%22%2C%22sessionId%22%3A%2242itfakd0odgyzs4nphuypspi1539063184774%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A33%3A04.774Z%22%2C%22userId%22%3A%220%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A2%2C%22dateTime%22%3A%222018-10-09T05%3A34%3A13.970Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%22cba749ec-cb84-11e8-8993-6be36895944f%22%2C%22v2SessionId%22%3A%22cba7bf17-cb84-11e8-a1a5-7dcf709e4827%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063254488,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://assets.eat24.com/js/main-982a6e873292be6cb66f.js 0:339715 \"No chunk found for: RestaurantModule\"",
+                "timestamp": 1539063263350,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://res.cloudinary.com/grubhub/image/upload/w_255,h_132,f_auto,q_auto,dpr_auto,g_auto,c_fill/iewythyjgnaryloyufxy - Failed to load resource: the server responded with a status of 504 ()",
+                "timestamp": 1539063268619,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "002a00ae-00b6-00d3-000c-003600d400fb.png",
+        "timestamp": 1539063251463,
+        "duration": 26930
+    },
+    {
+        "description": "Signing up with valid details and verifying the profile name|Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%22hmy87vdh6kfwtvvfu87j1ufeh1539063290339%22%2C%22sessionId%22%3A%22wylnqpg1xjni5a90zrnkgncfo1539063290337%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A34%3A50.337Z%22%2C%22userId%22%3A%22%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A6%2C%22dateTime%22%3A%222018-10-09T05%3A34%3A50.775Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%220a933abd-cb85-11e8-86e2-4db3ff9933ca%22%2C%22v2SessionId%22%3A%220a9388d6-cb85-11e8-85c6-b3a0d54774e3%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063291858,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://www.eat24.com/ 152:16575 Uncaught SyntaxError: Unexpected token h in JSON at position 0",
+                "timestamp": 1539063295495,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://www.eat24.com/ - [DOM] Found 2 elements with non-unique id #navi-form: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1539063297138,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "00bf0036-00fb-0038-00c6-002300c300f3.png",
+        "timestamp": 1539063283834,
+        "duration": 23656
+    },
+    {
+        "description": "Signing up with same email id twice|Register at Eat 24",
+        "passed": false,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": [
+            "Expected 'vikash!' not to equal 'vikash!'."
+        ],
+        "trace": [
+            "Error: Failed expectation\n    at Register.validateNotRegistered (D:\\e2etests\\PageObject\\SignUpPage.js:58:44)\n    at UserContext.<anonymous> (D:\\e2etests\\Test\\SignUpTest.js:37:18)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:112:25\n    at new ManagedPromise (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1077:7)\n    at ControlFlow.promise (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2505:12)\n    at schedulerExecute (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:95:18)\n    at TaskQueue.execute_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2974:25)"
+        ],
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%22hmy87vdh6kfwtvvfu87j1ufeh1539063290339%22%2C%22sessionId%22%3A%22wylnqpg1xjni5a90zrnkgncfo1539063290337%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A34%3A50.337Z%22%2C%22userId%22%3A%220%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A2%2C%22dateTime%22%3A%222018-10-09T05%3A35%3A11.743Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%220a933abd-cb85-11e8-86e2-4db3ff9933ca%22%2C%22v2SessionId%22%3A%220a9388d6-cb85-11e8-85c6-b3a0d54774e3%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063312078,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "00070026-0066-00dc-0058-00f000bc00be.png",
+        "timestamp": 1539063309112,
+        "duration": 24549
+    },
+    {
+        "description": "Signing up without entering first name|Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%22hmy87vdh6kfwtvvfu87j1ufeh1539063290339%22%2C%22sessionId%22%3A%22wylnqpg1xjni5a90zrnkgncfo1539063290337%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A34%3A50.337Z%22%2C%22userId%22%3A%2253906396%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A2%2C%22dateTime%22%3A%222018-10-09T05%3A35%3A37.804Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%220a933abd-cb85-11e8-86e2-4db3ff9933ca%22%2C%22v2SessionId%22%3A%220a9388d6-cb85-11e8-85c6-b3a0d54774e3%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063338156,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "00ff0053-00a2-002a-0060-00ac004b00d2.png",
+        "timestamp": 1539063335226,
+        "duration": 6082
+    },
+    {
+        "description": "Signing up without entering last name|Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "001900db-00ce-0012-00fe-0095007d0075.png",
+        "timestamp": 1539063342145,
+        "duration": 5885
+    },
+    {
+        "description": "Signing up without entering email|Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00fc00db-00b6-0004-006d-005b00a50082.png",
+        "timestamp": 1539063348582,
+        "duration": 5985
+    },
+    {
+        "description": "Signing up without entering password|Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00940059-0081-0032-008a-00d200fc00ab.png",
+        "timestamp": 1539063355122,
+        "duration": 6172
+    },
+    {
+        "description": "Signing up without entering anything|Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "007c005c-008d-00c6-00e7-0068001f00a8.png",
+        "timestamp": 1539063361921,
+        "duration": 7415
+    },
+    {
+        "description": "Signing up with entering numbers in first name|Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00b400bf-002b-00a4-008d-005500bb00cc.png",
+        "timestamp": 1539063369826,
+        "duration": 5831
+    },
+    {
+        "description": "Signing up with entering non-allowed characters in first name|Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00050045-0068-007c-001b-000100fd0083.png",
+        "timestamp": 1539063376357,
+        "duration": 6527
+    },
+    {
+        "description": "Signing up with entering numbers in last name|Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00ff0004-00e3-00b5-007b-0064006c00a3.png",
+        "timestamp": 1539063383452,
+        "duration": 6302
+    },
+    {
+        "description": "Signing up with entering non-allowed characters in last name|Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00d9001d-00e7-00ab-00f4-00f400200078.png",
+        "timestamp": 1539063390424,
+        "duration": 6991
+    },
+    {
+        "description": "Signing up with entering invalid id |Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00db00d3-00c6-0024-005f-0094004b0064.png",
+        "timestamp": 1539063397923,
+        "duration": 6332
+    },
+    {
+        "description": "Signing up with entering password as \"password\" |Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "008900f7-00f4-007d-0010-001a002d00bd.png",
+        "timestamp": 1539063404743,
+        "duration": 6715
+    },
+    {
+        "description": "Signing up with entering password less than 8 characters |Register at Eat 24",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [],
+        "screenShotFile": "00380076-00ff-0085-0092-006b00ea0011.png",
+        "timestamp": 1539063411950,
+        "duration": 6257
+    },
+    {
+        "description": "Signing up with entering password more than 255 characters |Register at Eat 24",
+        "passed": false,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "7cd2460215c6dba6c5f738432981586d",
+        "instanceId": 1904,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": [
+            "Failed: No element found using locator: By(css selector, [at-msg-name=\"password\"])"
+        ],
+        "trace": [
+            "NoSuchElementError: No element found using locator: By(css selector, [at-msg-name=\"password\"])\n    at elementArrayFinder.getWebElements.then (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:814:27)\n    at ManagedPromise.invokeCallback_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as getText] (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.(anonymous function).args [as getText] (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at Register.passwordLength (D:\\e2etests\\PageObject\\SignUpPage.js:138:26)\n    at UserContext.<anonymous> (D:\\e2etests\\Test\\SignUpTest.js:116:18)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:112:25\n    at new ManagedPromise (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1077:7)\n    at ControlFlow.promise (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2505:12)\n    at schedulerExecute (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:95:18)\n    at TaskQueue.execute_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\nFrom: Task: Run it(\"Signing up with entering password more than 255 characters \") in control flow\n    at UserContext.<anonymous> (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:94:19)\n    at attempt (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4297:26)\n    at QueueRunner.run (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4217:20)\n    at runNext (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4257:20)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4264:13\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4172:9\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:64:48\n    at ControlFlow.emit (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\events.js:62:21)\n    at ControlFlow.shutdown_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2674:10)\n    at shutdownTask_.MicroTask (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2599:53)\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (D:\\e2etests\\Test\\SignUpTest.js:113:5)\n    at addSpecsToSuite (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (D:\\e2etests\\Test\\SignUpTest.js:11:1)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)"
+        ],
+        "browserLogs": [],
+        "screenShotFile": "00ad0089-00e8-0057-0094-00b40038005c.png",
+        "timestamp": 1539063418780,
+        "duration": 11816
+    },
+    {
+        "description": "Find restuarant in particular region and check if it is displayed|Suite for Restaurant page",
+        "passed": false,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "25133b6604bd16cc058e91e4378b7fb9",
+        "instanceId": 8104,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.",
+            "Failed: script timeout: result was not received in 11 seconds\n  (Session info: chrome=69.0.3497.100)\n  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64)"
+        ],
+        "trace": [
+            "Error: Timeout - Async callback was not invoked within timeout specified by jasmine.DEFAULT_TIMEOUT_INTERVAL.\n    at Timeout._onTimeout (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4281:23)\n    at ontimeout (timers.js:498:11)\n    at tryOnTimeout (timers.js:323:5)\n    at Timer.listOnTimeout (timers.js:290:5)",
+            "ScriptTimeoutError: script timeout: result was not received in 11 seconds\n  (Session info: chrome=69.0.3497.100)\n  (Driver info: chromedriver=2.42.591088 (7b2b2dca23cca0862f674758c9a3933e685c27d5),platform=Windows NT 6.1.7601 SP1 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at doSend.then.response (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:441:30)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:189:7)\nFrom: Task: Protractor.waitForAngular() - Locator: By(css selector, input.addressInput-textInput)\n    at thenableWebDriverProxy.schedule (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at ProtractorBrowser.executeAsyncScript_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\browser.js:425:28)\n    at angularAppRoot.then (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\browser.js:456:33)\n    at ManagedPromise.invokeCallback_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at <anonymous>\nFrom: Task: <anonymous>\n    at pollCondition (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2195:19)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2191:7\n    at new ManagedPromise (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1077:7)\n    at ControlFlow.promise (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2505:12)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2190:22\n    at TaskQueue.execute_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at asyncRun (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at <anonymous>\nFrom: Task: <anonymous wait>\n    at scheduleWait (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2188:20)\n    at ControlFlow.wait (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2517:12)\n    at thenableWebDriverProxy.wait (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:934:29)\n    at run (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\browser.js:59:33)\n    at ProtractorBrowser.to.(anonymous function) [as wait] (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\browser.js:67:16)\n    at Restaurant.findfoodatlocation (D:\\e2etests\\PageObject\\OrderFoodPage.js:52:13)\n    at UserContext.<anonymous> (D:\\e2etests\\Test\\OrderFoodTest.js:29:20)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:112:25\n    at new ManagedPromise (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1077:7)\n    at ControlFlow.promise (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2505:12)\nFrom: Task: Run it(\"Find restuarant in particular region and check if it is displayed\") in control flow\n    at UserContext.<anonymous> (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasminewd2\\index.js:94:19)\n    at attempt (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4297:26)\n    at QueueRunner.run (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4217:20)\n    at runNext (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4257:20)\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4264:13\n    at C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4172:9\n    at Timeout.<anonymous> (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4283:11)\n    at ontimeout (timers.js:498:11)\n    at tryOnTimeout (timers.js:323:5)\n    at Timer.listOnTimeout (timers.js:290:5)\nFrom asynchronous test: \nError\n    at Suite.<anonymous> (D:\\e2etests\\Test\\OrderFoodTest.js:26:5)\n    at addSpecsToSuite (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1107:25)\n    at Env.describe (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:1074:7)\n    at describe (C:\\Users\\mindfire\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\jasmine-core\\lib\\jasmine-core\\jasmine.js:4399:18)\n    at Object.<anonymous> (D:\\e2etests\\Test\\OrderFoodTest.js:13:1)\n    at Module._compile (module.js:653:30)\n    at Object.Module._extensions..js (module.js:664:10)\n    at Module.load (module.js:566:32)\n    at tryModuleLoad (module.js:506:12)"
+        ],
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://logx.optimizely.com/v1/events - Failed to load resource: net::ERR_CONNECTION_CLOSED",
+                "timestamp": 1539063593437,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://logx.optimizely.com/v1/events - Failed to load resource: net::ERR_TIMED_OUT",
+                "timestamp": 1539063593465,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%22bala2nvoyrtcj564vlph1ex8a1539063635730%22%2C%22sessionId%22%3A%22ane1293k8lkcv98d776vduwpr1539063635729%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A40%3A35.729Z%22%2C%22userId%22%3A%22%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A9%2C%22dateTime%22%3A%222018-10-09T05%3A40%3A46.169Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%22d87252e7-cb85-11e8-8ac9-39c984c8a985%22%2C%22v2SessionId%22%3A%22d87279fb-cb85-11e8-a514-1f14e4f3cc7e%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063646525,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://www.eat24.com/ 152:16575 Uncaught SyntaxError: Unexpected token h in JSON at position 0",
+                "timestamp": 1539063650542,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://www.eat24.com/ - [DOM] Found 2 elements with non-unique id #navi-form: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1539063656153,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "0088001e-00d8-0047-0093-002f00d0004e.png",
+        "timestamp": 1539063552821,
+        "duration": 130454
+    },
+    {
+        "description": "Find restuarant in particular region and check if it is displayed|Suite for Restaurant page",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "94ac6036cd910248932eca0558d9e5d7",
+        "instanceId": 7192,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%22f6gkw3kl2h7mt75bf8juc8t4f1539063784289%22%2C%22sessionId%22%3A%22krixvdnuxshf4cc6k85g3asz41539063784287%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A43%3A04.287Z%22%2C%22userId%22%3A%22%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A6%2C%22dateTime%22%3A%222018-10-09T05%3A43%3A05.018Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%2230fd4142-cb86-11e8-a1a5-438ec58ef49b%22%2C%22v2SessionId%22%3A%2230fddd8e-cb86-11e8-8c12-b9f4fd9c5753%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063786096,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://www.eat24.com/ 152:16575 Uncaught SyntaxError: Unexpected token h in JSON at position 0",
+                "timestamp": 1539063789952,
+                "type": ""
+            },
+            {
+                "level": "SEVERE",
+                "message": "https://www.eat24.com/ - [DOM] Found 2 elements with non-unique id #navi-form: (More info: https://goo.gl/9p2vKq) %o %o",
+                "timestamp": 1539063791484,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://assets.eat24.com/js/main-982a6e873292be6cb66f.js 0:339715 \"No chunk found for: RestaurantModule\"",
+                "timestamp": 1539063802097,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "00540008-0068-0093-00eb-005a00c800f0.png",
+        "timestamp": 1539063763222,
+        "duration": 45039
+    },
+    {
+        "description": "Find restuarant in particular region and order from 4 star|Suite for Restaurant page",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "94ac6036cd910248932eca0558d9e5d7",
+        "instanceId": 7192,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%22f6gkw3kl2h7mt75bf8juc8t4f1539063784289%22%2C%22sessionId%22%3A%22krixvdnuxshf4cc6k85g3asz41539063784287%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A43%3A04.287Z%22%2C%22userId%22%3A%220%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A2%2C%22dateTime%22%3A%222018-10-09T05%3A43%3A32.659Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%2230fd4142-cb86-11e8-a1a5-438ec58ef49b%22%2C%22v2SessionId%22%3A%2230fddd8e-cb86-11e8-8c12-b9f4fd9c5753%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063813034,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://assets.eat24.com/js/main-982a6e873292be6cb66f.js 0:339715 \"No chunk found for: RestaurantModule\"",
+                "timestamp": 1539063823613,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "0069006c-000e-000f-008e-002000d8002e.png",
+        "timestamp": 1539063809869,
+        "duration": 58054
+    },
+    {
+        "description": "Sorting restaurant according to distance and verifying|Suite for Restaurant page",
+        "passed": true,
+        "pending": false,
+        "os": "Windows NT",
+        "sessionId": "94ac6036cd910248932eca0558d9e5d7",
+        "instanceId": 7192,
+        "browser": {
+            "name": "chrome",
+            "version": "69.0.3497.100"
+        },
+        "message": "Passed.",
+        "trace": "",
+        "browserLogs": [
+            {
+                "level": "SEVERE",
+                "message": "https://clickstream.grubhub.com/event.gif?event=%7B%22name%22%3A%22reverse-geocoded-users-ip%22%2C%22platform%22%3A%22umami%20eat24%22%2C%22browserId%22%3A%22f6gkw3kl2h7mt75bf8juc8t4f1539063784289%22%2C%22sessionId%22%3A%22krixvdnuxshf4cc6k85g3asz41539063784287%22%2C%22sessionStartDateTime%22%3A%222018-10-09T05%3A43%3A04.287Z%22%2C%22userId%22%3A%220%22%2C%22referrer%22%3A%22%22%2C%22userAgent%22%3A%22Mozilla/5.0%20%28Windows%20NT%206.1%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/69.0.3497.100%20Safari/537.36%22%2C%22protocol%22%3A%22https%3A%22%2C%22hostname%22%3A%22www.eat24.com%22%2C%22pathname%22%3A%22/%22%2C%22queryParams%22%3A%22%22%2C%22view%22%3A%22homepage%20logged%20out%22%2C%22data%22%3A%5B%5D%2C%22sequence%22%3A2%2C%22dateTime%22%3A%222018-10-09T05%3A44%3A32.376Z%22%2C%22timezone%22%3A-330%2C%22v2BrowserId%22%3A%2230fd4142-cb86-11e8-a1a5-438ec58ef49b%22%2C%22v2SessionId%22%3A%2230fddd8e-cb86-11e8-8c12-b9f4fd9c5753%22%7D - Failed to load resource: the server responded with a status of 400 (Bad Request)",
+                "timestamp": 1539063873274,
+                "type": ""
+            },
+            {
+                "level": "WARNING",
+                "message": "https://assets.eat24.com/js/main-982a6e873292be6cb66f.js 0:339715 \"No chunk found for: RestaurantModule\"",
+                "timestamp": 1539063883489,
+                "type": ""
+            }
+        ],
+        "screenShotFile": "00bd0052-0085-0049-0054-007f009b0054.png",
+        "timestamp": 1539063869710,
+        "duration": 19225
     }
 ];
 
